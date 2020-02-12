@@ -9,26 +9,37 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="wrapper">
         <!-- Header -->
-        <header class="header">
-            <div class="logo"></div>
+        <section>
+            <header>
+                <div class="header">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="images/logo240px.png">
+                            <img src="images/logo.png" alt="Logo Ellesei Fisioterapia" style="width:auto;">
+                        </picture>
+                    </a>
+                    <div class="prenota">+39-339-822-83-44<a href="tel:+39-339-822-83-44" class="button">Prenota</a>
+                    </div>
+                </div>
+            </header>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Chi sono</a></li>
                     <li><a href="#">Terapie</a></li>
                     <li><a href="#">Casi clinici</a></li>
-                    <li><a href="#">Contatti</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
-        </header>
+        </section>
 
         <!-- Bio -->
         <section class="bio">
             <div class="foto-donato">
                 <picture>
-                    <source media="(min-width: 650px)" srcset="images/home/donato-home.png">
-                    <source media="(min-width: 465px)" srcset="images/home/donato-home.png">
+                    <source media="(max-width: 240px)" srcset="images/home/donato-home240px.png">
+                    <source media="(max-width: 500px)" srcset="images/home/donato-home240px.png">
                     <img src="images/home/donato-home.png" alt="Donato Lecci nel suo studio" style="width:auto;">
                 </picture>
             </div>
@@ -49,10 +60,10 @@
         </section>
 
         <!-- Terapie -->
-        <section class="terapie">
-            <div>
-                <h2>Terapie e trattamenti</h2>
-                <ul>
+        <section id="terapie">
+            <h2 class="section-heading">Terapie e trattamenti</h2>
+            <div class="terapie">
+                <ul class="box">
                     <li><a href="">Bendaggio Multistrato</a></li>
                     <li><a href="">Fisiokinesiterapia</a></li>
                     <li><a href="">Ginnastica Posturale</a></li>
@@ -62,57 +73,61 @@
                     <li><a href="">Pancafit</a></li>
                     <li><a href="">Riflessologia Plantare</a></li>
                     <li><a href="">Tecar® Terapia</a></li>
+                    <li><a href="terapie.html" class="button">Scopri di pi&ugrave;</a></li>
                 </ul>
-            </div>
-            <div class="slideshow">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="images/home/bendaggio.png">
-                    <source media="(min-width: 465px)" srcset="images/home/bendaggio.png">
-                    <img src="images/home/bendaggio.png" alt="Bendaggio" style="width:auto;">
-                </picture>
+                <div class="slideshow">
+                    <picture>
+                        <source media="(max-width: 240px)" srcset="images/home/bendaggio240px.png">
+                        <source media="(max-width: 500px)" srcset="images/home/bendaggio240px.png">
+                        <img src="images/home/bendaggio.png" alt="Bendaggio" style="width:auto;">
+                    </picture>
+                </div>
             </div>
         </section>
 
         <!-- Testimonianze -->
-        <section class="testimonianze">
-            <h2 class="testimonianze-heading">Testimonianze</h2>
-            <div class="box"><q>Conoscevo Donato da tempo, e in passato avevo avuto modo di sperimentare la sua
-                    grandissima
-                    professionalità,
-                    terapeutica e umana. Anche se da dieci anni non facevo ricorso alle sue cure perché mi ero
-                    trasferita in
-                    un’altra città,
-                    nella disperazione post operatoria ho avuto la fortuna di ricordarmi di lui e di intuire che avrebbe
-                    potuto aiutarmi.
-                    Molto, moltissimo. E così è stato.</q>
-                <p><b>Paola, dirigente aziendale</b></p>
-            </div>
-            <div class="box"><q>Avevo già sofferto tanto prima dell'operazione, ma non avrei mai immaginato che dopo
-                    l'intervento
-                    avrei
-                    dovuto
-                    affrontare di nuovo il rigonfiamento e l'infiammazione dei tessuti. Una eventualità considerata
-                    normale
-                    dai medici, ma
-                    se non fossi andato presso Ellesei, probabilmente oggi avrei difficoltà a camminare e uscire di
-                    casa.
-                    Donato non so
-                    davvero come ringraziarti.</q>
-                <p><b>Luigi, direttore di banca</b></p>
-            </div>
-            <div class="box"><q>A seguito di un brutto incidente motociclistico ho subito la frattura scomposta
-                    del'omero
-                    e ho
-                    rimediato
-                    una brutta
-                    cicatrice. Oltre al dolore della ferita, ero davvero depresso e scoraggiato. Donato, con grande
-                    umanità
-                    ha saputo
-                    prendermi per mano lungo tutto il percorso riabilitativo. Se oggi posso muovere il braccio come
-                    prima
-                    dell'incidente, lo
-                    devo a lui.</q>
-                <p><b>Roberto, motociclista</b></p>
+        <section id="testimonianze">
+            <h2 class="section-heading">Testimonianze</h2>
+            <div class="testimonianze">
+                <div class="box"><q>Conoscevo Donato da tempo, e in passato avevo avuto modo di sperimentare la sua
+                        grandissima
+                        professionalità,
+                        terapeutica e umana. Anche se da dieci anni non facevo ricorso alle sue cure perché mi ero
+                        trasferita in
+                        un’altra città,
+                        nella disperazione post operatoria ho avuto la fortuna di ricordarmi di lui e di intuire che
+                        avrebbe
+                        potuto aiutarmi.
+                        Molto, moltissimo. E così è stato.</q>
+                    <p><b>Paola, dirigente aziendale</b></p>
+                </div>
+                <div class="box"><q>Avevo già sofferto tanto prima dell'operazione, ma non avrei mai immaginato che dopo
+                        l'intervento
+                        avrei
+                        dovuto
+                        affrontare di nuovo il rigonfiamento e l'infiammazione dei tessuti. Una eventualità considerata
+                        normale
+                        dai medici, ma
+                        se non fossi andato presso Ellesei, probabilmente oggi avrei difficoltà a camminare e uscire di
+                        casa.
+                        Donato non so
+                        davvero come ringraziarti.</q>
+                    <p><b>Luigi, direttore di banca</b></p>
+                </div>
+                <div class="box"><q>A seguito di un brutto incidente motociclistico ho subito la frattura scomposta
+                        del'omero
+                        e ho
+                        rimediato
+                        una brutta
+                        cicatrice. Oltre al dolore della ferita, ero davvero depresso e scoraggiato. Donato, con grande
+                        umanità
+                        ha saputo
+                        prendermi per mano lungo tutto il percorso riabilitativo. Se oggi posso muovere il braccio come
+                        prima
+                        dell'incidente, lo
+                        devo a lui.</q>
+                    <p><b>Roberto, motociclista</b></p>
+                </div>
             </div>
         </section>
 
@@ -123,20 +138,15 @@
                 <p>Studio Ellesei Fisioterapia di Donato Lecci</p>
                 <p>Via Cenisio 49, Milano 20154</p>
             </div>
+            <div class="contatti">
+                <h5>Contatti</h5>
+                <p>Telefono: +39 339 822 83 44</p>
+                <p>Email: info@ellesei-fisioterapia.it</p>
+            </div>
             <div class="orari">
                 <h5>Orari</h5>
                 <p>Dal lunedì al venerdì dalle 9:00 alle 19:00.</p>
                 <p>Sabato e Domenica chiuso.</p>
-            </div>
-            <div class="mappa">
-                <iframe
-                    src="https://www.google.it/maps/embed?pb=!1m18!1m12!1m3!1d2797.1200068189496!2d9.161859015278605!3d45.487528079101246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1176cff6951%3A0x2e51197756782dbf!2sEllesei%20Fisioterapia!5e0!3m2!1sen!2sau!4v1581398317454!5m2!1sen!2sau"
-                    width="480" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <div class="telefono">
-                <h5>Contatti</h5>
-                <p>Telefono: +39 339 822 83 44</p>
-                <p>Email: info@ellesei-fisioterapia.it</p>
             </div>
             <div class="copy">
                 <p>Ellesei Fisioterapia di Donato Lecci &copy;2020. <a href="privacy.html">Privacy policy</a></p>
