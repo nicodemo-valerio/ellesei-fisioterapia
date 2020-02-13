@@ -48,11 +48,22 @@ h1, h2 {
   box-shadow: var(--shadow);
   padding: 1rem;
 }
+/* .big-on-hover {
+  width: 100%;
+  transition: width 3s;
+} */
+.big-on-hover:hover {
+  -ms-transform: scale(2,2); /* IE 9 */
+  transform: scale(2,2);
+  transition-duration: 2s;
+  /* width: 200%;
+  z-index: 1; */
+}
 
 /* Grid container */
 .wrapper {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem 0;
 }
 .header {
   background: var(--color-2);
@@ -124,6 +135,13 @@ h1, h2 {
 .terapie a:hover {
   text-decoration: underline;
 }
+.terapie-foto {
+  display: grid;
+  gap: 1rem;
+  align-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
 /* Testimonianze */
 .testimonianze {
   background: var(--color-1);
@@ -131,6 +149,7 @@ h1, h2 {
   font-size: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  padding: 1rem;
 }
 .section-heading {
   font-size: 2rem;
@@ -193,9 +212,12 @@ iframe {
   grid-template-columns: repeat(2, 1fr);
 }
 @media(max-width: 580px){
-  .wrapper-contatti, .box-mappa {
+  .wrapper-contatti, .terapie-foto, .box-mappa {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 1rem 0;
+  }
+  .nav-menu a {
+    font-size: 1rem;
   }
   .box, .nav-menu, .box-telefono, .box-email, .box-orari, .box-indirizzo, .box-mappa {
     font-size: 1rem;
