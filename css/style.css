@@ -68,17 +68,17 @@ h1, h2 {
   font-size: 2rem;
   grid-template-rows: auto;
 }
-.nav-menu {
-  box-shadow: var(--shadow);
-  text-align: center;
-}
 .nav-menu ul{
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   list-style: none;
+  padding: 0;
+}
+.nav-menu li {
+  box-shadow: var(--shadow);
 }
 .nav-menu a {
-  border: 1px solid white;
   display: block;
   font-size: 1.5rem;
   padding: 1rem 0;
@@ -87,6 +87,8 @@ h1, h2 {
   text-transform: uppercase;
 }
 .nav-menu a:hover {
+  background: var(--color-3);
+  color: white;
   text-decoration: underline;
 }
 
