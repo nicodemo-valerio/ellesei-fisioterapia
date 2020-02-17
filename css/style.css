@@ -25,6 +25,12 @@ a:hover {
 }
 h1, h2 {
   color: var(--color-3);
+  text-align: center;
+  font-size: 3rem;
+}
+h3 { 
+  color: var(--color-3);
+  font-size: 1.5rem;
 }
 .button {
   background: var(--color-1);
@@ -161,7 +167,9 @@ h1, h2 {
   grid-template-rows: auto;
   padding: 1rem;
 }
-.footer h5 {
+.footer h3 {
+  color: var(--color-2);
+  font-size: 1rem;
   text-transform: uppercase;
 }
 .copy {
@@ -221,4 +229,14 @@ iframe {
   iframe {
     width: 100%;
   }
+}
+
+/* Mappa del sito */
+#mappa { 
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+#ul-mappa {
+  grid-column: 2 / 4;
 }
