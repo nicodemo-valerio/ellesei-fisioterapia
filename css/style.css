@@ -46,15 +46,11 @@ h3 {
 .logo:hover {
   background: var(--color-3);
 }
-/* img {
-  width: 100%;
-} */
 .box {
   background: white;
   box-shadow: var(--shadow);
   padding: 1rem;
 }
-
 .big-on-hover:hover {
   -ms-transform: scale(2,2); /* IE 9 */
   transform: scale(2,2);
