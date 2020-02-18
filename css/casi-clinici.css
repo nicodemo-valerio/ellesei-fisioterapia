@@ -39,3 +39,31 @@
   50% {margin-left:-200%;}
   75% {margin-left:-300%;}
 }
+.caso-box {
+    align-items: center;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.caso-h {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+.caso-desc {
+    grid-column-start: 1;
+    padding: 0.5rem;
+}
+.caso-foto {
+    grid-column-start: 2;
+}
+@media(max-width: 400px) {
+    .caso-box {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .caso-foto {
+        grid-column-start: 1;
+    }
+}
