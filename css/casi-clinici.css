@@ -1,0 +1,41 @@
+.slideshow {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.immagini-3, .immagini-4 {
+    width: 100%;
+    position: relative;
+}
+.immagini-3 {
+    width: 300%;
+    animation: cambia-immagine-3 10s infinite;
+}
+.immagini-4 {
+    width: 400%;
+    animation: cambia-immagine-4 10s infinite;
+}
+.immagine-1-su-3, .immagine-1-su-4 {
+    float:left;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.immagine-1-su-3 {
+    width: 33%;
+}
+.immagine-1-su-4 {
+    width: 25%;
+}
+@keyframes cambia-immagine-3{
+  0% {margin-left:0%;}
+  33% {margin-left:-100%;}
+  66% {margin-left:-200%;}
+}
+@keyframes cambia-immagine-4{
+  0% {margin-left:0%;}
+  25% {margin-left:-100%;}
+  50% {margin-left:-200%;}
+  75% {margin-left:-300%;}
+}
