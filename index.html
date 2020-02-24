@@ -12,6 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ellesei Fisioterapia | Home</title>
     <script src="https://kit.fontawesome.com/8ac4d140d8.js" crossorigin="anonymous"></script>
+    <script>
+        function chiudi() {
+            document.getElementById("gdpr").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -37,6 +42,22 @@
                 <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
+        <section id="gdpr-section">
+            <div id="gdpr">
+                <p>Utilizziamo i cookie per personalizzare contenuti ed annunci, per fornire funzionalità dei social
+                    media e per analizzare
+                    il nostro traffico. Condividiamo inoltre informazioni sul modo in cui utilizza il nostro sito con i
+                    nostri partner che
+                    si occupano di analisi dei dati web, pubblicità e social media, i quali potrebbero combinarle con
+                    altre informazioni che
+                    ha fornito loro o che hanno raccolto dal suo utilizzo dei loro servizi. Acconsenta ai nostri cookie
+                    se continua ad
+                    utilizzare il nostro sito web. Per maggiori informazioni visualizza la <a
+                        href="privacy.html">Privacy e Cookie policy</a>
+                </p>
+                <p><a class="button" onclick="chiudi()">Chiudi</a></p>
+            </div>
+        </section>
         <!-- Bio -->
         <section class="bio">
             <div class="foto-donato">
